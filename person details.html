@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person details</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor (name,age,emailAddress,phoneNum,gender,){
+                this.name= name;
+                this.age = age;
+                this.emailAddress = emailAddress ;
+                this.phoneNum = phoneNum;
+                this.gender = gender ;
+            }
+            getDetails(){
+                return(`The Name of person ${this.name}, Person's Age is ${this.age}, Person's mobile numer is ${this.phoneNum}, Person's gender is ${this.gender}`);
+            }
+        }
+
+const X = new Person('Sujesh', 27, 'sujesh@gmail.com', 1234567899, 'Male')
+console.log(X.getDetails());
+
+   </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

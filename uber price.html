@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uber price calculation</title>
+  </head>
+  <body>
+    <script>
+      class uber {
+        constructor(distance, waitingPeriod, rate) {
+          this.distance = distance;
+          this.waitingPeriod = waitingPeriod;
+          this.rate = rate;
+        }
+        setDistsance(dist) {
+          this.distance = dist;
+        }
+        getRideDetails() {
+         
+               return (`the distance of ride is ${this.distance} with waithing period of ${this.waitingPeriod} and rate of ${this.rate}`);
+                
+            }
+        getPrice() {
+          let totalPrice = this.distance * this.rate + this.waitingPeriod * 5;
+          return totalPrice;
+        }
+      }
+      let cus1 = new uber(100, 10, 15);
+      console.log(cus1.getRideDetails());
+      console.log(cus1.getPrice());
+
+      let cus2 = new uber(120, 18, 15);
+      console.log(cus2.getRideDetails());
+      console.log(cus2.getPrice());
+
+    
+    </script>
+  </body>
+</html>
